@@ -17,7 +17,7 @@ namespace Q3
 				{
 					int number = 1000 * a + 100 * a + 10 * b + b;
 					var root2 = Math.Sqrt(number);
-					if (number % root2 == 0)
+					if (number % root2 == 0) //(root2==Math.Floor(number)
 					{
 						Console.WriteLine(number);
 					}
