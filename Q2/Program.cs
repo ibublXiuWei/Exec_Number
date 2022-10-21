@@ -15,7 +15,7 @@ namespace Q2
 			for (int i = target; i <=target2;  i++)
 			{
 					var root2=Math.Sqrt(i);
-					if (i % root2 == 0)
+					if (i % root2 == 0)  //(root2==Math.Floor(Math.Sqrt(number))
 						{
 						Console.WriteLine($"{i}是質數");
 						}
