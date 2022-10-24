@@ -10,15 +10,23 @@ namespace Q2
 	{
 		static void Main(string[] args)
 		{
-			int target = 103;
-			int target2 = 3003;
+			int target = 31;
+			int target2 = 153;
 			for (int i = target; i <=target2;  i++)
 			{
-					var root2=Math.Sqrt(i);
-					if (i % root2 == 0)  
+				int count = new int();
+				for (int k = 1; k <= i; k++)
+				{
+					if (i%k==0)
 						{
-						Console.WriteLine($"{i}是質數");
+						count++;
 						}
+				}
+				if(count==2)
+					{
+						Console.WriteLine($"{i}是質數");
+					}
+					
 			}
 			
 		}
